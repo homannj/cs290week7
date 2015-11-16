@@ -1,0 +1,29 @@
+<h1>{{title}} Request Recieved</h1>
+<style>
+  table {border-collapse: collapse;}
+  td {border: 1px solid black;}
+</style>
+<table>
+<thead>
+<tr>
+  <td>
+    Parameter
+  </td>
+  <td>
+    Value
+  </td>
+</tr>
+</thead>
+<tbody>
+    {{#each parameters}}
+    <tr>
+      <td>
+        {{this.key}}
+      </td>
+      <td>
+        {{this.value}}
+      </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
